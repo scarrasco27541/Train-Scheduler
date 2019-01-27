@@ -1,0 +1,14 @@
+#banner {
+	text-align:center;
+	background-color:magenta;
+	padding:1em 2em;
+}
+
+#train_table th, #train_table td {
+	border:1px solid black;
+	padding:2px 5px;
+}
+/* Example of advanced selection using properties: */
+#newTrainForm input[type="text"] {
+	width:100%;
+}
