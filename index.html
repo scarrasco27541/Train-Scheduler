@@ -2,14 +2,17 @@
 	<head>
 	
 		<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
 
 		<script src="assets/javascript/script.js"></script>
 		
+<!--
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+-->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 		
 	</head>
@@ -21,16 +24,18 @@
 		
 		<div class="container">
 			<div class="title">
-			Current Train Schedule
+			  <h2>Current Train Schedule</h2>
 			</div>
 			<div class="content">
 			<table id="train_table">
 				<thead>
+				  <tr>
 					<th>Train</th>
 					<th>Destination</th>
 					<th>Freq (min)</th>
 					<th>Next Arrival:</th>
 					<th>Minutes Away:</th>
+				  </tr>
 				</thead>
 				<tbody id="train_info"></tbody>
 			</table>
@@ -38,19 +43,19 @@
 		
 		<div class="container">
 			<div class="title">
-			Add Train
+			  <h3>Add Train Below</h3>
 			</div>
 			<div class="content">
 				<form id="newTrainForm">
-					Train Name:
-					<input type="text" id="train_name" />
-					Destination:
-					<input type="text" id="train_dest" />
-					First Train Time (HH:mm - military time):
-					<input type="text" id="train_first" />			
-					Frequency (min):
-					<input type="text" id="train_freq" />
-					<input type="submit" id="train_submit" />
+					Train Name:<br />
+					<input type="text" id="train_name" /><br />
+					Destination:<br />
+					<input type="text" id="train_dest" /><br />
+					First Train Time (HH:mm - military time):<br />
+					<input type="text" id="train_first" /><br />
+					Frequency (min):<br />
+					<input type="text" id="train_freq" /><br />
+					<input type="submit" id="train_submit" /><br />
 				</form>
 			</div>
 		</div>

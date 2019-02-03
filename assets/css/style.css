@@ -1,14 +1,64 @@
+body {
+	background-color:yellow;
+}
+
 #banner {
 	text-align:center;
-	background-color:magenta;
-	padding:1em 2em;
+	background-color:red;
+	padding:.5em .5em;
+	border:.5px solid black;
+	box-shadow:5px 5px 4px #808080;
+	margin-bottom:8px;
+	border-radius:15px;
 }
+.container {
+	table-layout:auto;
+	padding:.5em .5em;
+	box-shadow:5px 5px 4px #808080;
+	border:.5px solid white;
+	margin-bottom:35px;
+}
+
+
+h2 {
+	background-color:red;
+	text-align:center;
+	border:.5px solid black;
+	padding:.5em .5em;
+	margin:1px 2px 8px 4px;
+	box-shadow:5px 5px 4px #808080;
+	border-radius:15px;
+}
+	
+h3 {
+	background-color:red;
+	margin-left:350px;
+	margin-right:350px;
+	text-align:center;
+	padding:.5em .5em;
+	border:.5px solid black;
+	box-shadow:5px 5px 4px #808080;
+	border-radius:15px;
+}	
+
+#train_table {
+	width: 90%;
+	margin-bottom:8px;
+	margin-left:60px;
+}
+	
 
 #train_table th, #train_table td {
 	border:1px solid black;
 	padding:2px 5px;
+	text-align:center;
+	background-color:white;
 }
 /* Example of advanced selection using properties: */
+#newTrainForm {
+	width:50%;
+	margin:auto;
+}
 #newTrainForm input[type="text"] {
 	width:100%;
 }
